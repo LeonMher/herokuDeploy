@@ -5,4 +5,6 @@ app.get("/", (req, res) => {
   res.send("worked");
 });
 
-app.listen(3004, () => console.log("listening on port 3004"));
+app.listen(process.env.PORT || 3004, () =>
+  console.log("listening on port 3004")
+);
